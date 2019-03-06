@@ -1,0 +1,12 @@
+app:
+  jwtSecret: 1234567890qwertyuiopasdfghjklZXCVBNM!@#$%^&*()POIUYTREWQAGAcd!12
+  jwtExpirationInMs: 43200
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:33060/app?characterEncoding=utf8&charaterSetResults=utf8&useSSL=false
+    username: root
+    password:
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
